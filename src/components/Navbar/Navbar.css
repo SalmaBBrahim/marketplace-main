@@ -1,0 +1,135 @@
+/* Navbar.css */
+.navbar-container {
+  position: relative;
+  z-index: 40;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: rgba(234, 143, 39, 0.25); /* Primary color with 40% opacity */
+  padding: 10px 0;
+}
+.page-menu {
+  color: gray;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  max-width: 80px; /* Adjust the size as needed */
+}
+.navbar-menu{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  color: #555;
+  font-size: 18px;
+ margin: 10px;
+}
+.navbar-right{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.search-input {
+  width: 200px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: width 0.3s ease-in-out;
+}
+
+.search-input:focus {
+  width: 300px;
+  border-color: #007bff; /* Primary color */
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  color: #555;
+  transition: color 0.3s ease-in-out;
+}
+
+.search-bar-container:hover .search-icon {
+  color: #007bff; /* Primary color */
+}
+
+.login-cart {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-btn {
+  background: none;
+  border: none;
+  color:#f1a343d2;
+  font-weight: bold;
+  cursor: pointer;
+}
+.signup-btn{
+  background: linear-gradient(90deg, #ea5003d2, #141312);
+  border: none;
+  color:white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+
+.cart-btn {
+  background: linear-gradient(90deg, #f1a343d2, #f19d26); /* Gradient from primary to secondary */
+  color: white;
+  padding: 6px 16px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none ;
+}
+
+.cart-text {
+  display: none;
+  transition: display 0.2s ease-in-out;
+  text-decoration: none ;
+}
+
+.cart-btn:hover .cart-text {
+  display: block;
+  text-decoration: none ;
+}
+
+.cart-icon {
+  font-size: 1.25rem;
+  text-decoration: none ;
+}
+
+@media (min-width: 640px) {
+  .search-bar-container {
+    display: block;
+  }
+}
+.navbar-content .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid orangered
+} 
+.navbar-content li{
+  cursor: pointer;
+}
