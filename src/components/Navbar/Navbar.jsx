@@ -13,15 +13,9 @@ const Navbar = ({ handleOrderPopup }) => {
         <Link to={'/'}><img src={assets.logo} alt="logo" className='logo' />
         </Link>
         <ul className="navbar-menu">
-          <Link className="page-menu" to ='/' > 
-          <p onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""  } >Acceuil</p>
-          </Link>
-          <Link  to ='/collection' className="page-menu" >
-          <p onClick={() => setMenu("collection")} className={menu === "collection" ? "active" : ""}>Collection</p> 
-          </Link>
-          <Link  to ='/contact'className="page-menu" >
-          <p onClick={() => setMenu("contact")} className={menu === "contact" ? "active" : ""}>Contactez-Nous</p> 
-          </Link>
+          <Link className="page-menu" to ='/' > <p onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""  } >Acceuil</p></Link>
+          <Link  to ='/collection' className="page-menu" ><p onClick={() => setMenu("collection")} className={menu === "collection" ? "active" : ""}>Collection</p> </Link>
+          <Link  to ='/contact'className="page-menu" ><p onClick={() => setMenu("contact")} className={menu === "contact" ? "active" : ""}>Contactez-Nous</p> </Link>
         </ul>
 
 
@@ -31,7 +25,9 @@ const Navbar = ({ handleOrderPopup }) => {
             placeholder="Que recherchez-vous ?"
             className="search-input"
           />
-          <IoMdSearch className="" />
+          <div className=" p-2 bg-gray-200 rounded-full">
+        <IoMdSearch className="text-gray-500 text-lg hover:text-blue-500 transition-colors duration-300 ease-in-out cursor-pointer" />
+      </div>
           <Link to="/signup" className="signup-btn">
             <button className="signup-btn">S'inscrire</button>
           </Link>

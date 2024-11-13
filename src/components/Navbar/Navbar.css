@@ -1,4 +1,4 @@
-/* Navbar.css */
+/* Navbar Container */
 .navbar-container {
   position: relative;
   z-index: 40;
@@ -6,11 +6,8 @@
   background-color: rgba(234, 143, 39, 0.25); /* Primary color with 40% opacity */
   padding: 10px 0;
 }
-.page-menu {
-  color: gray;
-  text-decoration: none;
-  font-weight: bold;
-}
+
+/* Navbar Content */
 .navbar-content {
   display: flex;
   justify-content: space-between;
@@ -18,83 +15,107 @@
   padding: 0 20px;
 }
 
+/* Logo Section */
 .logo {
-  max-width: 80px; /* Adjust the size as needed */
+  max-width: 80px;
 }
-.navbar-menu{
+
+/* Navbar Menu */
+.navbar-menu {
   display: flex;
   list-style: none;
   gap: 20px;
   color: #555;
   font-size: 18px;
- margin: 10px;
+  margin: 0;
 }
-.navbar-right{
+
+.page-menu {
+  color: gray;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 2px;
+  transition: color 0.3s ease;
+}
+
+.page-menu:hover,
+.page-menu.active {
+  color: orangered;
+  border-bottom: 2px solid orangered;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+
+/* Right Section */
+.navbar-right {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
 
-
-
+/* Search Bar */
 .search-bar-container {
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 40px;
 }
 
 .search-input {
   width: 200px;
-  padding: 6px 12px;
-  border-radius: 6px;
+  padding: 8px 12px;
+  border-radius: 20px;
   border: 1px solid #ccc;
-  transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .search-input:focus {
-  width: 300px;
-  border-color: #007bff; /* Primary color */
+  width: 250px;
+  border-color: #007bff;
+  outline: none;
 }
 
 .search-icon {
   position: absolute;
-  right: 12px;
+  right: 10px;
   color: #555;
-  transition: color 0.3s ease-in-out;
+  font-size: 1.1rem;
+  pointer-events: none;
 }
 
-.search-bar-container:hover .search-icon {
-  color: #007bff; /* Primary color */
-}
-
-.login-cart {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+/* Login and Signup Buttons */
+.login-btn,
+.signup-btn {
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .login-btn {
   background: none;
-  border: none;
-  color:#f1a343d2;
-  font-weight: bold;
-  cursor: pointer;
-}
-.signup-btn{
-  background: linear-gradient(90deg, #ea5003d2, #141312);
-  border: none;
-  color:white;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 5px 10px;
-  border-radius: 20px;
+  color: #f1a343;
 }
 
+.login-btn:hover {
+  color: #ea5003;
+}
 
-.cart-btn {
-  background: linear-gradient(90deg, #f1a343d2, #f19d26); /* Gradient from primary to secondary */
+.signup-btn {
+  background: linear-gradient(90deg, #ea5003, #141312);
   color: white;
-  padding: 6px 16px;
+}
+
+.signup-btn:hover {
+  background: linear-gradient(90deg, #f19d26, #141312);
+}
+
+/* Cart Button */
+.cart-btn {
+  background: linear-gradient(90deg, #f1a343, #f19d26);
+  color: white;
+  padding: 6px 12px;
   border-radius: 999px;
   display: flex;
   align-items: center;
@@ -102,34 +123,24 @@
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  text-decoration: none ;
+  text-decoration: none;
+}
+
+.cart-btn:hover {
+  background: linear-gradient(90deg, #f19d26, #ea5003);
 }
 
 .cart-text {
   display: none;
-  transition: display 0.2s ease-in-out;
-  text-decoration: none ;
 }
 
 .cart-btn:hover .cart-text {
-  display: block;
-  text-decoration: none ;
+  display: inline;
 }
 
-.cart-icon {
-  font-size: 1.25rem;
-  text-decoration: none ;
-}
-
+/* Responsive Design */
 @media (min-width: 640px) {
   .search-bar-container {
-    display: block;
+    display: flex;
   }
-}
-.navbar-content .active{
-    padding-bottom: 2px;
-    border-bottom: 2px solid orangered
-} 
-.navbar-content li{
-  cursor: pointer;
 }

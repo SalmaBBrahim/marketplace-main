@@ -8,33 +8,6 @@ import { ShopContext } from '../../context/ShopContext';
 import ProductItem from '../ProductItem';
 
 
-/*const Productsitem = [
-    {
-      id: 1,
-      img: Img1,
-      title: "PULL OVER",
-      prix:"69.90 TND"
-    },
-    {
-      id: 2,
-      img: Img2,
-      title: "PULL OVER",
-      prix:"59.90 TND"
-    },
-    {
-      id: 3,
-      img: Img3,
-      title: "PULL OVER",
-      prix:"69.90 TND"
-    },
-    {
-      id: 4,
-      img: Img4,
-      title: "PULL OVER",
-     prix:"59.90 TND"
-    },
-   
-  ];*/
 const Populaire = () => {
     const {products} = useContext(ShopContext);
     //console.log(products)

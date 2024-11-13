@@ -27,49 +27,58 @@ export const products = [
         id: 1,
         img: pullOverF1,
         title: "PULL OVER",
+        category: "Femme",
+        type:"pull",
         price: 69.90 
     },
     {
         id: 2,
         img: pullOverH1,
         title: "PULL OVER",
+        category: "homme",
+        type:"pull",
         price: 59.90 
     },
     {
         id: 3,
         img: pullOverF2 ,
         title: "PULL OVER",
+        category: "Femme",
+        type:"pull",
         price: 69.90
     },
     {
         id: 4,
         img: pullOverH2,
         title: "PULL OVER",
+        category: "Femme",
+        type:"pull",
         price: 59.90 
     },
     {
         id: 5,
         title: "Sur Chemise",
         img: surchemise2,
-        category: "vetements",
+        category: "Femme",
+        type:"veste",
         price: 80
 
     },
     {
         id: 6,
-        title: "Pontalon Gris",
+        title: "Pantalon Gris",
         img: pontalon1,
-        /*category:"Femme",
-        subCategory: "vetements",*/
+        category:"Femme",
+        type: "pantalon",
         price: 60
 
     },
     {
         id: 7,
-        title: "Pontalon Gris",
+        title: "Pantalon Gris",
         img: pontalon1,
-        /*category:"Femme",
-        subCategory: "vetements",*/
+        category:"Femme",
+        type: "pantalon",
         price: 60
 
     }

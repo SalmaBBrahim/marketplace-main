@@ -9,10 +9,44 @@ const Collection = () => {
 
   const { products } = useContext(ShopContext);
   const [filterProducts, setFilterProducts] = useState([]);
+  const [category,setCategory] = useState([]);
+  const [type,setType] = useState([]);
+
+  const toggleCategory = (e) =>{
+    if(category.includes(e.target.value)){
+       setCategory(prev => prev.filter(item =>item !== e.target.value));  
+    }
+    else{
+      setCategory(prev =>[...prev,e.target.value]);
+    }
+  }
+  const toggleType = (e) =>{
+    if(type.includes(e.target.value)){
+       setType(prev => prev.filter(item =>item !== e.target.value));  
+    }
+    else{
+      setType(prev =>[...prev,e.target.value]);
+    }
+  }
+  const applyFilter = () =>{
+    let productCopy = products.slice();
+    if(category.length > 0){
+      productCopy = productCopy.filter(item => category.includes(item.category))
+    }
+    if(type.length > 0){
+      productCopy = productCopy.filter(item => type.includes(item.type))
+    }
+    setFilterProducts(productCopy);
+  }
+ 
 
   useEffect(() => {
     setFilterProducts(products || [])
   }, [products])
+  useEffect(() => {
+    applyFilter();
+  }, [category,type])
+  
   return (
     <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t'>
 
@@ -22,36 +56,37 @@ const Collection = () => {
           <p className='mb-3 text-sm font-medium'> CATEGORIES</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Femme'} />Femme
+              <input className='w-3' type="checkbox" value={'Femme'}
+              onChange={toggleCategory} />Femme
             </p>
           </div>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Homme'} />Homme
+              <input className='w-3' type="checkbox" value={'Homme'} onChange={toggleCategory} />Homme
             </p>
           </div>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'Enfant'} />Enfant
+              <input className='w-3' type="checkbox" value={'Enfant'} onChange={toggleCategory} />Enfant
             </p>
           </div>
 
         </div>
         <div className=' border  border-gray-300 pl-5 py-3 my-5' >
-          <p className='mb-3 text-sm font-medium'> TYPE</p>
+          <p className='mb-3 text-sm font-medium'  > TYPE</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'vetement'} />Pull
+              <input className='w-3' type="checkbox" value={'pull'}  onChange={toggleType} />Pull
             </p>
           </div>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'chaussures'} />Pantalon
+              <input className='w-3' type="checkbox" value={'pantalon'}  onChange={toggleType}/>Pantalon
             </p>
           </div>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <p className='flex gap-2'>
-              <input className='w-3' type="checkbox" value={'accessoires'} />Veste
+              <input className='w-3' type="checkbox" value={'veste'} onChange={toggleType}/>Veste
             </p>
           </div>
 
