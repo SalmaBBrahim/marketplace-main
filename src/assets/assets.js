@@ -1,11 +1,21 @@
 import logo from './logo.png';
 
 import surchemise2 from './Catalogue/surchemise2.png';
+import surchemise3 from './Catalogue/surchemise3.png';
+import surchemise4 from './Catalogue/surchemise4.png';
+
+
+
+
 
 import pontalon1 from './Catalogue/pontalon.png';
 import pontalon2 from './Catalogue/pontalongris.png';
 import pantalon3 from  './Catalogue/pontalon3.png';
 import pantalon4 from  './Catalogue/pantalon4.png';
+import pants5 from  './Catalogue/pants5.png';
+import jogger from  './Catalogue/jogger.png';
+
+
 
 
 import pull3 from './Catalogue/pull3.png';
@@ -15,7 +25,18 @@ import pull6 from './Catalogue/pull6.png';
 import pull7 from './Catalogue/pull7.png';
 import pull8 from './Catalogue/pull8.png';
 import pull9 from './Catalogue/pull9.png';
+import pull10 from './Catalogue/pull10.png';
+import pull11 from './Catalogue/pull11.png';
 import pullr from './Catalogue/pullrosee.png';
+import pull12 from  './Catalogue/pull12.png';
+import sweatshirt from './Catalogue/sweatshirt.png';
+import sweatshirt2 from './Catalogue/gilet.png';
+import gilet from  './Catalogue/pull12.png';
+import cardigon2 from  './Catalogue/cardigon2.png';
+
+
+
+
 
 import pullOverF1 from './Populaire/pull_overF1.png';
 import pullOverF2 from './Populaire/pull_overF2.png';
@@ -26,10 +47,18 @@ import pullOverH2 from './Populaire/pull_overH2.png';
 export const assets = {
     logo,
     surchemise2,
+    surchemise3,
+    surchemise4,
+    gilet,
+    cardigon2,
+
+    
     pontalon1,
     pontalon2,
     pantalon3,
     pantalon4,
+    pants5,
+    jogger,
     
     
     pullOverF1,
@@ -43,7 +72,13 @@ export const assets = {
     pull6,
     pull7,
     pull8,
-    pull9
+    pull9,
+    pull10,
+    pull11,
+    pull12,
+    sweatshirt,
+    sweatshirt2
+
 };
 
 export const products = [
@@ -109,7 +144,7 @@ export const products = [
     {
         id: 8,
         title: "Pull",
-        img: pull3,
+        img: pullr,
         category:"Femme",
         type: "pull",
         price: 60
@@ -129,7 +164,7 @@ export const products = [
         title: "Pull",
         img: pull3,
         category:"Femme",
-        type: "pantalon",
+        type: "pull",
         price: 60
 
     },
@@ -156,7 +191,7 @@ export const products = [
         title: "Pull",
         img: pull5,
         category:"Femme",
-        type: "pantalon",
+        type: "pull",
         price: 60
 
     },
@@ -186,43 +221,80 @@ export const products = [
         type: "pull",
         price: 60
 
-    }
-    /*{
-        id: 7,
-        title: "Pantalon Gris",
-        img: pontalon1,
-        category:"Femme",
+    },
+    {
+        id: 16,
+        title: "pull",
+        img: pull10,
+        category:"Homme",
+        type: "pull",
+        price: 60
+
+    },
+    {
+        id: 17,
+        title: "pull",
+        img: pull11,
+        category:"Homme",
+        type: "pull",
+        price: 60
+
+    },
+    {
+        id: 18,
+        title: "Gilet",
+        img: gilet,
+        category:"Homme",
+        type: "veste",
+        price: 60
+
+    },
+    {
+        id: 19,
+        title: "Jogger",
+        img: jogger,
+        category:"Homme",
         type: "pantalon",
         price: 60
 
     },
     {
-        id: 7,
-        title: "Pantalon Gris",
-        img: pontalon1,
+        id: 20,
+        title: "veste",
+        img: surchemise3,
         category:"Femme",
-        type: "pantalon",
+        type: "veste",
         price: 60
 
     },
     {
-        id: 7,
-        title: "Pantalon Gris",
-        img: pontalon1,
-        category:"Femme",
-        type: "pantalon",
+        id: 21,
+        title: "Cardigon",
+        img: cardigon2,
+        category:"Homme",
+        type: "veste",
         price: 60
 
     },
     {
-        id: 7,
-        title: "Pantalon Gris",
-        img: pontalon1,
-        category:"Femme",
-        type: "pantalon",
+        id: 22,
+        title: "pull",
+        img: sweatshirt,
+        category:"Homme",
+        type: "pull",
         price: 60
 
-    }*/
+    },
+    {
+        id: 23,
+        title: "pull",
+        img:sweatshirt2,
+        category:"Hommme",
+        type: "pull",
+        price: 60
+
+    },
+
 
     
 
