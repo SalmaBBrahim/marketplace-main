@@ -5,7 +5,10 @@ import Populaire from '../components/Populaire/Populaire'
 const Home = () => {
   return (
     <div>
-      <Header/>
+     
+      <Populaire/>
+      <Footer/>
+
      
     </div>
   )

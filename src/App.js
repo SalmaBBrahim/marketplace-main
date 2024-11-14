@@ -8,7 +8,7 @@ import 'aos/dist/aos.css';
 import { Toaster } from 'react-hot-toast'; // Importez Toaster
 //import './App.css'; 
 import Login from './components/Login/Login';
-import Populaire from './components/Populaire/Populaire';
+
 import { auth } from './firebase/firebase';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer/Footer';
@@ -60,7 +60,7 @@ const App = () => {
           <Route path="/signup" element={<SignUp />} /> {/* Route pour SignUp */}
         </Routes>
         <Toaster /> {/* Affichez le Toaster pour les notifications */}
-        <Populaire/>
+       
       <Footer/> 
 
       

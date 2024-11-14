@@ -85,6 +85,8 @@ export const products = [
     {
         id: 1,
         img: pullOverF1,
+        //description
+        //sizes: ["S","M","L"]
         title: "PULL OVER",
         category: "Femme",
         type:"pull",

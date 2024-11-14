@@ -3,7 +3,7 @@ import Image1 from "../../assets/Header/women.png";
 import Image2 from "../../assets/Header/shopping.png";
 import Image3 from "../../assets/Header/sale.png";
 import './Header.css'; 
-import Populaire from "../Populaire/Populaire";
+
 
 
 const ImageList = [
