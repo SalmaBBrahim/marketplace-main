@@ -1,6 +1,7 @@
 /* Footer.css */
 .footer-container {
-    background-color: #f3f4f6; 
+      background-color: rgba(234, 143, 39, 0.25); /* Primary color with 40% opacity */
+
           color: rgb(0, 0, 0);
           padding: 10px;
   }
