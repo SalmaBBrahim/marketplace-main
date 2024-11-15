@@ -19,7 +19,7 @@ const Footer = () => {
     return (
         <div className="footer-container">
             <div className="container">
-                <div data-aos="zoom-in">
+                <div>
                     {/* Company details */}
                     <div >
                         <h1 className="footer-title">
