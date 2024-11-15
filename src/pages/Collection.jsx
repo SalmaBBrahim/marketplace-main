@@ -7,7 +7,7 @@ import ProductItem from '../components/ProductItem';
 
 const Collection = () => {
 
-  const { products } = useContext(ShopContext);
+  const { products,search } = useContext(ShopContext);
   const [filterProducts, setFilterProducts] = useState([]);
   const [category,setCategory] = useState([]);
   const [type,setType] = useState([]);
@@ -30,6 +30,9 @@ const Collection = () => {
   }
   const applyFilter = () =>{
     let productCopy = products.slice();
+    if(search){
+      productCopy =productCopy.filter(item => item.title.toLowerCase().includes(search.toLowerCase()))
+    }
     if(category.length > 0){
       productCopy = productCopy.filter(item => category.includes(item.category))
     }
@@ -45,7 +48,7 @@ const Collection = () => {
   }, [products])
   useEffect(() => {
     applyFilter();
-  }, [category,type])
+  }, [category,type,search])
   
   return (
     <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t'>

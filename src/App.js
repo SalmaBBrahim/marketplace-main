@@ -13,6 +13,7 @@ import { auth } from './firebase/firebase';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer/Footer';
 import Collection from './pages/Collection';
+import SearchBar from './components/SearchBar';
 
 
 const App = () => {
@@ -51,6 +52,7 @@ const App = () => {
     
     
       <Navbar handleOrderPopup={handleOrderPopup}  /> {/* Affiche Navbar sur toutes les pages */}
+      
         <Routes>
           <Route path="/" element={<Home handleOrderPopup={handleOrderPopup} />} />
           <Route path="/collection" element={<Collection />} /> 

@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import { NavLink, Link } from 'react-router-dom'; // Assurez-vous d'importer Link
 import { IoMdSearch } from "react-icons/io";
+import SearchBar from "../SearchBar";
 import { FaCartShopping } from "react-icons/fa6";
 import { assets } from '../../assets/assets';
 import './Navbar.css';
+
+
+
+
 
 const Navbar = ({ handleOrderPopup }) => {
   const [menu, setMenu] = useState("home")
@@ -20,14 +25,7 @@ const Navbar = ({ handleOrderPopup }) => {
 
 
         <div className="navbar-right">
-          <input
-            type="text"
-            placeholder="Que recherchez-vous ?"
-            className="search-input"
-          />
-          <div className=" p-2 bg-gray-200 rounded-full">
-        <IoMdSearch className="text-gray-500 text-lg hover:text-blue-500 transition-colors duration-300 ease-in-out cursor-pointer" />
-      </div>
+         <SearchBar  />
           <Link to="/signup" className="signup-btn">
             <button className="signup-btn">S'inscrire</button>
           </Link>
