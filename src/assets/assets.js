@@ -1,29 +1,28 @@
 import logo from './logo.png';
-import starOn from './star_on.png'
-import starOff from './star_off.png'
 
-import surchemise2 from './Catalogue/surchemise2.png';
-import surchemise3 from './Catalogue/surchemise3.png';
+
+import surchemise2 from './Catalogue/veste1.jpg';
+import surchemise3 from './Catalogue/veste2.jpg';
 import surchemise4 from './Catalogue/surchemise4.png';
 
 
 
 
 
-import pontalon1 from './Catalogue/pontalon.png';
-import pontalon2 from './Catalogue/pontalongris.png';
+import pontalon1 from './Catalogue/pants1.jpg';
+import pontalon2 from './Catalogue/pants2.jpg';
 import pantalon3 from  './Catalogue/pontalon3.png';
 import pantalon4 from  './Catalogue/pantalon4.png';
 import pants5 from  './Catalogue/pants5.png';
-import jogger from  './Catalogue/jogger.png';
+import jogger from  './Catalogue/jogger1.jpg';
 
 
 
 
-import pull3 from './Catalogue/pull3.png';
-import pull4 from './Catalogue/pull4.png';
-import pull5 from './Catalogue/pull5.png';
-import pull6 from './Catalogue/pull6.png';
+import pull3 from './Catalogue/pull111.jpg';
+import pull4 from './Catalogue/pull112.jpg';
+import pull5 from './Catalogue/pull113.jpg';
+import pull6 from './Catalogue/pull114.jpg';
 import pull7 from './Catalogue/pull7.png';
 import pull8 from './Catalogue/pull8.png';
 import pull9 from './Catalogue/pull9.png';
@@ -48,8 +47,7 @@ import pullOverH2 from './Populaire/pull_overH2.png';
 
 export const assets = {
     logo,
-    starOn,
-    starOff,
+   
     surchemise2,
     surchemise3,
     surchemise4,
@@ -141,7 +139,7 @@ export const products = [
     {
         id: 7,
         title: "Pantalon",
-        img: [pantalon3],
+        img: [pontalon2],
         category:"Femme",
         type: "pantalon",
         price: 60
