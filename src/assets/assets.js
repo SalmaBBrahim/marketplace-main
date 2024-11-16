@@ -1,4 +1,6 @@
 import logo from './logo.png';
+import starOn from './star_on.png'
+import starOff from './star_off.png'
 
 import surchemise2 from './Catalogue/surchemise2.png';
 import surchemise3 from './Catalogue/surchemise3.png';
@@ -46,6 +48,8 @@ import pullOverH2 from './Populaire/pull_overH2.png';
 
 export const assets = {
     logo,
+    starOn,
+    starOff,
     surchemise2,
     surchemise3,
     surchemise4,
@@ -84,7 +88,7 @@ export const assets = {
 export const products = [
     {
         id: 1,
-        img: pullOverF1,
+        img: [pullOverF1],
         //description
         //sizes: ["S","M","L"]
         title: "PULL OVER",
@@ -94,7 +98,7 @@ export const products = [
     },
     {
         id: 2,
-        img: pullOverH1,
+        img: [pullOverH1],
         title: "PULL OVER",
         category: "Homme",
         type:"pull",
@@ -102,7 +106,7 @@ export const products = [
     },
     {
         id: 3,
-        img: pullOverF2 ,
+        img: [pullOverF2] ,
         title: "PULL OVER",
         category: "Femme",
         type:"pull",
@@ -110,7 +114,7 @@ export const products = [
     },
     {
         id: 4,
-        img: pullOverH2,
+        img: [pullOverH2],
         title: "PULL OVER",
         category: "Homme",
         type:"pull",
@@ -119,7 +123,7 @@ export const products = [
     {
         id: 5,
         title: "Sur Chemise",
-        img: surchemise2,
+        img: [surchemise2],
         category: "Femme",
         type:"veste",
         price: 80
@@ -128,7 +132,7 @@ export const products = [
     {
         id: 6,
         title: "Pantalon",
-        img: pontalon1,
+        img: [pontalon1],
         category:"Femme",
         type: "pantalon",
         price: 60
@@ -137,7 +141,7 @@ export const products = [
     {
         id: 7,
         title: "Pantalon",
-        img: pantalon3,
+        img: [pantalon3],
         category:"Femme",
         type: "pantalon",
         price: 60
@@ -146,7 +150,7 @@ export const products = [
     {
         id: 8,
         title: "Pull",
-        img: pullr,
+        img: [pullr],
         category:"Femme",
         type: "pull",
         price: 60
@@ -155,7 +159,7 @@ export const products = [
     {
         id: 9,
         title: "Pantalon",
-        img: pantalon4,
+        img: [pantalon4],
         category:"Femme",
         type: "pantalon",
         price: 60
@@ -164,7 +168,7 @@ export const products = [
     {
         id: 10,
         title: "Pull",
-        img: pull3,
+        img: [pull3],
         category:"Femme",
         type: "pull",
         price: 60
@@ -173,7 +177,7 @@ export const products = [
     {
         id: 11,
         title: "Pull",
-        img: pull4,
+        img: [pull4],
         category:"Femme",
         type: "pull",
         price: 60
@@ -182,7 +186,7 @@ export const products = [
     {
         id: 11,
         title: "Pantalon",
-        img: pontalon1,
+        img: [pontalon1],
         category:"Femme",
         type: "pantalon",
         price: 60
@@ -191,7 +195,7 @@ export const products = [
     {
         id: 12,
         title: "Pull",
-        img: pull5,
+        img: [pull5],
         category:"Femme",
         type: "pull",
         price: 60
@@ -200,7 +204,7 @@ export const products = [
     {
         id: 13,
         title: "Pull",
-        img: pull6,
+        img:[ pull6],
         category:"Femme",
         type: "pull",
         price: 60
@@ -209,7 +213,7 @@ export const products = [
     {
         id: 14,
         title: "Pull",
-        img: pull8,
+        img: [pull8],
         category:"Femme",
         type: "pull",
         price: 60
@@ -218,7 +222,7 @@ export const products = [
     {
         id: 15,
         title: "Pull",
-        img: pull9,
+        img: [pull9],
         category:"Femme",
         type: "pull",
         price: 60
@@ -227,13 +231,13 @@ export const products = [
     {
         id: 16,
         title: "pull",
-        img: pull10,
+        img: [pull10],
         category:"Homme",
         type: "pull",
         price: 60
 
-    },
-    {
+    }
+    /*{
         id: 17,
         title: "pull",
         img: pull11,
@@ -295,7 +299,7 @@ export const products = [
         type: "pull",
         price: 60
 
-    },
+    },*/
 
 
     

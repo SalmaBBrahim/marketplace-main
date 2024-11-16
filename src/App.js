@@ -14,6 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer/Footer';
 import Collection from './pages/Collection';
 import SearchBar from './components/SearchBar';
+import Product from './pages/Product';
 
 
 const App = () => {
@@ -55,7 +56,8 @@ const App = () => {
       
         <Routes>
           <Route path="/" element={<Home handleOrderPopup={handleOrderPopup} />} />
-          <Route path="/collection" element={<Collection />} /> 
+          <Route path="/collection" element={<Collection />} />
+          <Route path ="/product/:productId" element = {<Product/>}/>
           
 
           <Route path="/login" element={<Login />} /> 

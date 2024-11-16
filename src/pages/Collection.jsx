@@ -5,6 +5,7 @@ import ProductItem from '../components/ProductItem';
 
 
 
+
 const Collection = () => {
 
   const { products,search } = useContext(ShopContext);
@@ -51,6 +52,7 @@ const Collection = () => {
   }, [category,type,search])
   
   return (
+    
     <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t'>
 
       <div className='min-w-60'>
@@ -111,6 +113,7 @@ const Collection = () => {
           />
         ))}
       </div>
+
 
     </div>
     </div>
