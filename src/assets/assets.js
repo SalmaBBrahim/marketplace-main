@@ -3,7 +3,8 @@ import logo from './logo.png';
 
 import surchemise2 from './Catalogue/veste1.jpg';
 import surchemise3 from './Catalogue/veste2.jpg';
-import surchemise4 from './Catalogue/surchemise4.png';
+import surchemise4 from './Catalogue/veste4.jpg';
+import veste5 from './Catalogue/veste5.jpg';
 
 
 
@@ -23,17 +24,18 @@ import pull3 from './Catalogue/pull111.jpg';
 import pull4 from './Catalogue/pull112.jpg';
 import pull5 from './Catalogue/pull113.jpg';
 import pull6 from './Catalogue/pull114.jpg';
-import pull7 from './Catalogue/pull7.png';
-import pull8 from './Catalogue/pull8.png';
-import pull9 from './Catalogue/pull9.png';
-import pull10 from './Catalogue/pull10.png';
-import pull11 from './Catalogue/pull11.png';
-import pullr from './Catalogue/pullrosee.png';
-import pull12 from  './Catalogue/pull12.png';
+import pull7 from './Catalogue/pull017.jpg';
+import pull8 from './Catalogue/pull019.jpg';
+import pull9 from './Catalogue/pull20.jpg';
+import pull10 from './Catalogue/pull21.jpg';
+import pull11 from './Catalogue/pull115.jpg';
+import pullr from './Catalogue/pullover5.jpg';
+import pull12 from  './Catalogue/pull116.jpg';
 import sweatshirt from './Catalogue/sweatshirt.png';
-import sweatshirt2 from './Catalogue/gilet.png';
+
 import gilet from  './Catalogue/pull12.png';
-import cardigon2 from  './Catalogue/cardigon2.png';
+import cardigon2 from  './Catalogue/cardigon2.jpg';
+import cardigon3 from  './Catalogue/cardigan3.jpg';
 
 
 
@@ -53,6 +55,7 @@ export const assets = {
     surchemise4,
     gilet,
     cardigon2,
+    cardigon3,
 
     
     pontalon1,
@@ -79,7 +82,8 @@ export const assets = {
     pull11,
     pull12,
     sweatshirt,
-    sweatshirt2
+    veste5
+    
 
 };
 
@@ -91,6 +95,7 @@ export const products = [
         //sizes: ["S","M","L"]
         title: "PULL OVER",
         category: "Femme",
+        sizes: ["S","M","L"],
         type:"pull",
         price: 69.90 
     },
@@ -99,6 +104,7 @@ export const products = [
         img: [pullOverH1],
         title: "PULL OVER",
         category: "Homme",
+        sizes: ["S","M","L"],
         type:"pull",
         price: 59.90 
     },
@@ -107,6 +113,7 @@ export const products = [
         img: [pullOverF2] ,
         title: "PULL OVER",
         category: "Femme",
+        sizes: ["S","M","L"],
         type:"pull",
         price: 69.90
     },
@@ -115,21 +122,23 @@ export const products = [
         img: [pullOverH2],
         title: "PULL OVER",
         category: "Homme",
+        sizes: ["S","M","L"],
         type:"pull",
         price: 59.90 
     },
     {
         id: 5,
-        title: "Sur Chemise",
+        title: "SUR CHEMISE",
         img: [surchemise2],
         category: "Femme",
+        sizes: ["S","M","L"],
         type:"veste",
         price: 80
 
     },
     {
         id: 6,
-        title: "Pantalon",
+        title: "PANTALON",
         img: [pontalon1],
         category:"Femme",
         type: "pantalon",
@@ -138,20 +147,22 @@ export const products = [
     },
     {
         id: 7,
-        title: "Pantalon",
+        title: "PANTALON LARGE",
         img: [pontalon2],
         category:"Femme",
+        sizes: ["S","M","L"],
         type: "pantalon",
         price: 60
 
     },
     {
         id: 8,
-        title: "Pull",
+        title: "PULLOVER",
         img: [pullr],
         category:"Femme",
+        sizes: ["S","M","L"],
         type: "pull",
-        price: 60
+        price: 59.90
 
     },
     {
@@ -174,56 +185,54 @@ export const products = [
     },
     {
         id: 11,
-        title: "Pull",
+        title: "Pull POLO",
         img: [pull4],
         category:"Femme",
+        //description:"Col à rever, Patte boutonnée partielle , Manches longues et coupe décontractée",
+        sizes: ["S","M","L"],
         type: "pull",
-        price: 60
+        price: 69.90
 
     },
-    {
-        id: 11,
-        title: "Pantalon",
-        img: [pontalon1],
-        category:"Femme",
-        type: "pantalon",
-        price: 60
-
-    },
+    
     {
         id: 12,
-        title: "Pull",
+        title: "PULL GRIS",
         img: [pull5],
         category:"Femme",
+        sizes: ["S","M","L"],
         type: "pull",
-        price: 60
+        price: 69.90
 
     },
     {
         id: 13,
-        title: "Pull",
+        title: "PULL COL MONTON",
         img:[ pull6],
         category:"Femme",
+        sizes: ["S","M","L"],
         type: "pull",
         price: 60
 
     },
     {
         id: 14,
-        title: "Pull",
+        title: "PULL NOIR",
         img: [pull8],
         category:"Femme",
+        sizes: ["S","M","L"],
         type: "pull",
-        price: 60
+        price: 69.90
 
     },
     {
         id: 15,
-        title: "Pull",
+        title: "PULL",
         img: [pull9],
         category:"Femme",
+        sizes: ["S","M","L"],
         type: "pull",
-        price: 60
+        price: 39.900
 
     },
     {
@@ -231,6 +240,7 @@ export const products = [
         title: "pull",
         img: [pull10],
         category:"Homme",
+        sizes: ["S","M","L"],
         type: "pull",
         price: 60
 
@@ -238,13 +248,13 @@ export const products = [
     /*{
         id: 17,
         title: "pull",
-        img: pull11,
+        img: [pull11],
         category:"Homme",
         type: "pull",
         price: 60
 
     },
-    {
+    /*{
         id: 18,
         title: "Gilet",
         img: gilet,
@@ -253,7 +263,7 @@ export const products = [
         price: 60
 
     },
-    {
+    /*{
         id: 19,
         title: "Jogger",
         img: jogger,
@@ -292,7 +302,7 @@ export const products = [
     {
         id: 23,
         title: "pull",
-        img:sweatshirt2,
+        img:veste5,
         category:"Hommme",
         type: "pull",
         price: 60
